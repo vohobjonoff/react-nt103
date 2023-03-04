@@ -14,3 +14,10 @@
     height: 30px;
     background-color: aqua;
 }
+
+.main{
+    width: 1200px;
+    border: 1px solid;
+    margin: 0 auto;
+    
+}

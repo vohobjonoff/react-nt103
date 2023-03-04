@@ -1,26 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
 const Search = () => {
-
-    // const location = "Tashkent,Hadra maydoni";
     
     
     const [location, setLocation] = useState('Toshkent.hadra maydoni');
-    const [count, setCount] = useState(0);
-
- 
-
-    function inc() {
-        setCount( count + 1 )
-    }
 
 
-
-    
-
-    
-
-   
+    const [count, setCount] = useState(1);
 
     return (
         <>
@@ -36,7 +22,7 @@ const Search = () => {
                     </label>
                 </form>
                 <p>{ count}</p>
-                <button onClick={inc()}>inc</button>
+                <button onClick={() => setCount(count + 1)}>add</button>
             </div>
         </>
     )
